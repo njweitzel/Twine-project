@@ -3,13 +3,272 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>ostrich</title>
+<title>banana peel</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 50%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0.25) 0%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play ostrich.</tw-noscript></noscript></tw-story>
-<tw-storydata name="ostrich" startnode="1" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="F52BDD3C-8080-47C5-8F55-054AF2A9C093" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="the last thing" tags="" position="400,100" size="100,100">... on this of all mornings, the last thing anyone wants to see is an [[ostrich.]]</tw-passagedata><tw-passagedata pid="2" name="uncomfortable." tags="" position="1100,400" size="100,100">&quot;!!!&quot; says the ostrich, also apparently [[unsettled...]]</tw-passagedata><tw-passagedata pid="3" name="closer." tags="" position="650,450" size="100,100">&quot;!!!,&quot; the ostrich [[reasserts.]]</tw-passagedata><tw-passagedata pid="4" name="reasserts." tags="" position="450,350" size="100,100">You carefully blink each of your eyes in succession, an old trick for stabilizing realities. It is unmistakably an [[ostrich;... -&gt;the last thing]]</tw-passagedata><tw-passagedata pid="5" name="gumballs..." tags="" position="1050,150" size="100,100">Once, for an entire week between the ages of two and two-point-one, your entire vocabulary consisted of the word &quot;gumball,&quot; which became the name of every person and object as well as the lone verb in your dramatic revision of the human language. Now, somehow, the occurrence of this word makes you vaguely [[uncomfortable.]]</tw-passagedata><tw-passagedata pid="6" name="ostrich." tags="" position="600,75" size="100,100">But here it is, maybe slightly larger than life, in the middle of your Auntie Integer&#39;s sunroom. A flightless bird with eyes the size of [[gumballs...]]</tw-passagedata><tw-passagedata pid="7" name="unsettled..." tags="" position="900,475" size="100,100">But you speak Human, not Ostrich. You take a step [[closer.]]</tw-passagedata></tw-storydata>
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play banana peel.</tw-noscript></noscript></tw-story>
+<tw-storydata name="banana peel" startnode="15" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="FEBBB01C-8B9C-4CF3-A2D4-A75F06A8F03A" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Opening" tags="" position="275,150" size="100,100">*Gasp* Dripped in sweat, you’re awake. Do you remember what you were dreaming about? No, no you don’t. But a sinking gut feeling hits you like a wave. Whatever it was in that dream, it felt near. It felt real. And it was awful. “I must avoid that,” you think aloud. You shiver.
+
+Can you avoid it? Should you avoid it?
+
+//Pick an option from below//
+
+(text-colour:green) [[[You don’t know what it even is. Much less how to avoid it. It’s time to get up and start with your day -&gt;path 1 - 1]].]
+
+(text-colour:blue) [[[Open your journal, maybe things you’ve written there will jog your memory and help you remember what you dreamed about -&gt;path 2 - 1]].]
+</tw-passagedata><tw-passagedata pid="2" name="path 2 - 1" tags="" position="425,275" size="100,100">Extending your arm out, longer than it should stretch because you’re unwilling to leave the warm hug of your blanket, you reach for your journal.
+
+Opening it, you return to your own little world of delicate graphite sketches and blue-lined notes scribbled in a laughably tiny font (text-colour:yellow)[sprawled] across the margins.
+
+//TIME TRAVELER 67TH EDITION//
+
+“Shit.”
+
+The journal didn’t help you with your dream, but it sure did remind you that you had a big presentation for the board today. And you totally forgot.
+
+“Double shit!”
+
+The red gleaming numbers on the bedside clock mean you’re also late for work.
+
+//Pick an option from below//
+
+(text-colour:red) [[[You decide to head to your desktop and study your presentation notes. You can’t even imagine heading to work feeling unprepared, no matter if you’re late -&gt;path 1 -2]].]
+
+(text-colour:green) [[[Throw on your clothes and grab your bag, you can’t even imagine being to work late again, much less what your boss would say about it -&gt;path 2 -2]].]
+
+ </tw-passagedata><tw-passagedata pid="3" name="path 1 -2" tags="" position="150,450" size="100,100">Your eyes bug out from your head, staring blankly, yet intently, at the square white screen.
+
+&#39;&#39;BOARD MEETING, CONSIDERING IMPROVEMENTS TO THE PROJECT&#39;&#39;
+Safety concerns*
+(text-colour:yellow)[Human testing?
+New parts] next week
+Griffin Lab innovation?
+
+&quot;Wow, incredible job with the notes.&quot; 
+
+You maybe copied the minimum remarks from your boss yesterday when she went over what you needed to say in front of the board. The big scary board. The big scary boss telling you what to say in front of the (text-colour:yellow)[big scary board. Big scary board scary] big boss. Big scary dream. UGH what was in that dream? Looming over you like a shadow, you snap back to the glaring white desktop.
+
+&#39;&#39;//[[Continue on -&gt;path 1-3]]//&#39;&#39;
+</tw-passagedata><tw-passagedata pid="4" name="path 1-3" tags="" position="150,600" size="100,100">Your phone gleams and big scary boss is calling.
+
+Lifting gently up to your ear: “Hello?”
+
+(text-colour:yellow)[“Um where are you?”
+
+“On my way and definitely] not late!”
+
+“Get off your computer, you’re going to do just fine today. And come in to work!!”
+
+//&#39;&#39;[[Continue on -&gt;path 2 -2]]&#39;&#39;//.
+</tw-passagedata><tw-passagedata pid="5" name="path 2 -2" tags="" position="425,450" size="100,100">In the car, engine humming right along, you reach for your phone. Texts popping in a line, each a punch to the throat.
+
+&quot;Oh ya, she&#39;s mad&quot;
+
+Blaring and sudden, you hear the horns go off around you. Looking up suddenly, your wrists crack as you jostle the steering wheel (text-colour:yellow)[HARD. A necessary correction away from imminent] danger, knowing that you lingered looking at the texts for too long.
+
+You (text-colour:yellow)[sweat breathing with your whole chest.
+
+But then, a calming clarity]?
+
+&quot;Ah right, that must have been the horrible thing.&quot;
+
+Your dream accomplished, you finish your drive in silence... phone nestled in the center console [[unbothered -&gt;path 2 -3]].</tw-passagedata><tw-passagedata pid="6" name="path 3 -2" tags="" position="625,450" size="100,100">//Buzzing//.
+
+//Buzz//. //Buzz//.
+
+Rhythmic. Unwavering. Repeating.
+
+Eyelids drooping, you sift your spoon by your mouth with oat after oat. Mouthful followed by another, as gritty and chewful as the last.
+
+//Buzz.//
+
+This one jolts you back, spoon dangling from the corners of your jaw. It&#39;s your mom. Instinctually and assuredly you pick up the phone and answer.
+
+&quot;Hey today&#39;s the big day ya?&quot;
+
+And it was.
+
+&quot;Yeah. I&#39;m not sure whether it will go well.&quot;
+
+&quot;Well I believe in you. I&#39;m proud of you.&quot;
+
+&quot;Yeah. Thanks mom.&quot;
+
+//Buzz//.
+
+This jolt didn&#39;t feel as nice. Your boss. You&#39;re late. Very.
+
+//Buzz//.
+
+&quot;Sorry mom, gotta go.&quot;
+
+&quot;Here always. Bye.&quot;
+
+Sucking in air, you clutch your keys, sweep up your notes, and make your way out the [[door -&gt;path 3 -3]].</tw-passagedata><tw-passagedata pid="7" name="path 3 -3" tags="" position="625,600" size="100,100">&quot;You&#39;re prepared. Just make it happen.&quot;
+
+Your boss Mayci swings wide the thick wooden doors and you lean forward so far into the room that you find your feet under you walking step by step to the podium at the end of the hall.
+
+Within seconds, your feet aren&#39;t under you, you&#39;re upended and falling justly to meet the floorboards. The banana peel, the enemy and constant to forever be, is your downfall.
+
+With a groan and a crick of the neck you tilt your head up, ready to meet the laughter and the scorn of the people in the [[room -&gt;path 3 -4]].
+
+</tw-passagedata><tw-passagedata pid="8" name="path 2 -3" tags="" position="425,600" size="100,100">Sitting across from your (text-colour:yellow)[boss, Mayci, always makes your chest tighten. Acutely] aware of each new breath, your compressed chest barely permisses you to exhale.
+
+&quot;You won&#39;t be late again. I know how tough it&#39;s been without her, but you gotta try for me.&quot;
+
+Staring through her bitter eyes, (text-colour:yellow)[your mouth sticks remorsefully] like glue.
+
+(text-colour:yellow)[&quot;I would ask you to explain yourself but...&quot;
+
+&quot;... but but what?&quot; stammering]. lovely.
+
+&quot;You have to get to your presentation.&quot;
+
+//Pick an option from below.//
+
+(text-colour:orange)[[[Stammering again. &quot;Oh. right-yes. Of course -&gt;path 1-4]].&quot;]
+
+(text-colour:blue)[[[Finding your voice now. &quot;Mayci. I messed up. But this will make you proud, promise -&gt;path 2-4]].&quot;]</tw-passagedata><tw-passagedata pid="9" name="path 1 - 1" tags="" position="150,275" size="100,100">You manage to stuff that dream and whatever the terrible thing in it was deep into a corner of your mind where it won’t bother you anymore. Your brain is a cluttered mess after all, so it could get lost there pretty easily anyways. 
+
+Making it down to the kitchen, you open the cabinet to find oats. You hate them, oats. But it’s food, after all. (text-colour:yellow)[Groaning], your eyes drift to the calendar drooping from the fridge. “Shit.”
+
+The red ink reading 3pm is a bare slap in the face. 
+
+You had forgotten about the big presentation today.
+
+//Pick an option from below//
+
+(text-colour:green)[[[Forget the oats, you didn’t want to eat them in the first place. Open your desktop to find your presentation notes. You don’t want to feel unprepared -&gt;path 1 -2]]. ]
+
+(text-colour:red)[[[There is absolutely no time to waste. Can you imagine being late for such a big day? Maybe you can make if you rush and hurry to the car -&gt;path 2 -2]]. ]
+
+(text-colour:blue)[[[The big presentation can wait. Avoiding preparing for it will soothe the stress you feel. Work is for when you get to work -&gt;path 3 -2]].]
+</tw-passagedata><tw-passagedata pid="10" name="path 3 -4" tags="" position="825,400" size="100,100">Instead, in front of your face rests a hand, outstretched.
+
+&quot;You&#39;re okay son. Here. I&#39;ll help you up now.&quot;
+
+Blinking, you accept the outstretched gift from your mom and meet her smile with one of your own.
+
+Finally up and aware, you scan the room to find no one yet in their chairs. You fell, no one was around to hear. No. She was.
+
+&quot;You knew I couldn&#39;t miss your meeting. No chance. You&#39;ve worked too hard.&quot;
+
+Well, in fact, no horrible, terrible, no-good, very bad thing -- could ever ruin [[this -&gt;path FINAL]].
+
+//&#39;&#39;[[Ruin it -&gt;Opening]] if you must. You have the power. This was never supposed to exist, anyway&#39;&#39;//
+
+</tw-passagedata><tw-passagedata pid="11" name="path FINAL" tags="" position="850,650" size="100,100">With a hush, the newly-sat panel is eagerly awaiting.
+
+Mom, bright-eyed and beaming, sits close by.
+
+&quot;I&#39;m here to present today on the my life&#39;s work: //The social-emotional aspects of family and relationship in the human race//&quot;
+
+[[The (text-colour:yellow)[end] -&gt;reflection]].</tw-passagedata><tw-passagedata pid="12" name="reflection" tags="" position="625,850" size="100,100">&#39;&#39;REFLECTION&#39;&#39;
+
+I knew I wanted to do a loop. Just some way to get stuck in the story over and over, kind of like a &quot;groundhog day&quot;-esque type of moment. Once I figured out that the main character was going to have some time-traveling invention/ability it all clicked together. I think the idea that the mom was central to the story came about later. I wanted the presence of a new character to shape the story in a new way, and having a time-travelling moment where the main character decides to go back and bring their mom into the narrative is that defining shape to the story. Also, I wanted a sense of humor that was a result of long-drawn out suspense, thus, the banana peel as the horrible, no-good thing. I hope you enjoyed this in all of its quirks and twists. Each time you go through, I hope you notice tiny details laced within each part of the narrative that make each run through it unique.
+
+Best,
+Noah
+
+That sounded like an email, what am I doing.</tw-passagedata><tw-passagedata pid="13" name="path 1-4" tags="" position="150,750" size="100,100">(text-colour:yellow)[&quot;It&#39;s time to go.&quot;
+
+You walk
+           down
+           
+                   the]
+                   
+                   
+                       hallway
+                            
+(text-colour:yellow)[Plodding along, one foot before the next, you push open the heavy, solid wooden doors to the] [[podium -&gt;path 1-5]].</tw-passagedata><tw-passagedata pid="14" name="path 2-4" tags="" position="425,750" size="100,100">(text-colour:yellow)[&quot;It&#39;s time to go.&quot;
+
+You walk
+           down
+           
+                   the]
+                   
+                   
+                       hallway
+                            
+(text-colour:yellow)[Plodding along, one foot before the next, you push open the heavy, solid wooden doors to the] [[podium -&gt;path 2-5]].</tw-passagedata><tw-passagedata pid="15" name="Start" tags="" position="550,100" size="100,100">*Gasp* Dripped in sweat, you’re awake. Do you remember what you were dreaming about? No, no you don’t. But a sinking gut feeling hits you like a wave. Whatever it was in that dream, it felt near. It felt real. And it was awful. “I must avoid that,” you think aloud. You shiver.
+
+Can you avoid it? Should you avoid it?
+
+//Pick an option from below//
+
+You don’t know what it even is. Much less how to avoid it. It’s time to get up and start with your [[day -&gt;path 1 - 1alt]].
+Open your journal, maybe things you’ve written there will jog your memory and help you remember what you dreamed [[about -&gt;path 2 - 1]].</tw-passagedata><tw-passagedata pid="16" name="path 1 - 1alt" tags="" position="600,325" size="100,100">You manage to stuff that dream and whatever the terrible thing in it was deep into a corner of your mind where it won’t bother you anymore. Your brain is a cluttered mess after all, so it could get lost there pretty easily anyways. 
+
+Making it down to the kitchen, you open the cabinet to find oats. You hate them, oats. But it’s food, after all. (text-colour:yellow)[Groaning], your eyes drift to the calendar drooping from the fridge. “Shit.”
+
+The red ink reading 3pm is a bare slap in the face. 
+
+You had forgotten about the big presentation today.
+
+//Pick an option from below//
+
+(text-colour:green)[[[Forget the oats, you didn’t want to eat them in the first place. Open your desktop to find your presentation notes. You don’t want to feel unprepared -&gt;path 1 -2]]. ]
+
+(text-colour:red)[[[There is absolutely no time to waste. Can you imagine being late for such a big day? Maybe you can make if you rush and hurry to the car -&gt;path 2 -2]]. ]
+</tw-passagedata><tw-passagedata pid="17" name="path 2-5" tags="" position="425,875" size="100,100">//&#39;&#39;A TIME TRAVELER&#39;S RESEARCH&#39;&#39;//
+
+It reads in bright bold dashing across the screen.
+
+Instilled with new confidence, knowing your years of work will be showcased in front of the panel, you take long strides towards the podium and
+
+and
+
+and
+
+your feet are no longer under you
+
+You&#39;ve slipped as you fall with a thud. The panel takes a collective, but tortously audible //gasp//. Mayci slaps a hand over her mouth.
+
+&quot;Are you okay?&quot;
+
+Feeling bruises well up under your skin you make to your feet.
+
+You&#39;ve slipped.
+
+You&#39;ve slipped comically and aggressively.
+
+(text-colour:yellow)[On a banana peel.]
+
+Your dream comes rushing back, a thundering wave pounding your head from side to side. You slipped. You fell. A gasp. You fell on a banana peel. The horrible, terrible, no-good, very bad thing. [[Realized -&gt;path 1-6]].
+
+You have to escape.</tw-passagedata><tw-passagedata pid="18" name="path 1-5" tags="" position="150,875" size="100,100">//&#39;&#39;A TIME TRAVELER&#39;S RESEARCH&#39;&#39;//
+
+It reads in bright bold dashing across the screen.
+
+Instilled with new confidence, knowing your years of work will be showcased in front of the panel, you take long strides towards the podium and
+
+and
+
+and
+
+your feet are no longer under you
+
+You&#39;ve slipped as you fall with a thud. The panel takes a collective, but tortously audible //gasp//. Mayci laughs. Feeling bruises well up under your skin you make to your feet.
+
+You&#39;ve slipped.
+
+You&#39;ve slipped comically and aggressively.
+
+(text-colour:yellow)[On a banana peel.]
+
+Your dream comes rushing back, a thundering wave pounding your head from side to side. You slipped. You fell. A gasp. You fell on a banana peel. The horrible, terrible, no-good, very bad thing. [[Realized -&gt;path 1-6]].</tw-passagedata><tw-passagedata pid="19" name="path 1-6" tags="" position="300,1000" size="100,100">You can&#39;t even imagine how embarrassing that was.
+
+You rush down to the lab. FLYING down flights of stairs.
+
+//Where was this balance a second ago?//
+
+Tossing aside the lab door, you make your way to your contraption.
+
+Without a care for the right thing to do, you enter your elaborate, fragile time machine and pull down the safety latch.
+
+[[N+E-X&#39;T -&gt;Opening]] </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
